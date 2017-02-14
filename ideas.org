@@ -1,0 +1,12 @@
+* Things to Keep in Mind
+  - Some actions change the identifier: =coat chicken with flour=
+  - Some actions move the identifier: =place chicken in dish=
+  - Prepositions should be interchangable: =place chicken in dish= vs =place
+    chicken on plate=
+  - Every command should have optional expository parameter
+  - Identifier hiding should be possible: =in_bowl flour { add flour. }.=
+
+* Questions
+  - Should =in_bowl= be special, or generalized out?
+  - How should we handle ingredient amounts?
+  - Can flexibility be added beyond the expository parameter?

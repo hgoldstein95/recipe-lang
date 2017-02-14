@@ -1,0 +1,35 @@
+Define "Chocolate Chip Cookies".
+Ingredient flour : "2 1/4 cups all-purpose flour".
+Ingredient baking_soda : "1 tsp baking soda".
+Ingredient salt : "1 tsp salt".
+Ingredient butter : "1 cup butter, softened".
+Ingredient sugar : "3/4 cup granulated sugar".
+Ingredient brown_sugar : "3/4 cup packed brown sugar".
+Ingredient vanilla : "1 teaspoon vanilla extract".
+Ingredient eggs : "2 large eggs".
+Ingredient choc_chips : "2 cups chocolate chips".
+Equiptment sheet : "cookie sheet".
+Procedure.
+  preheat_oven 350.
+  in_bowl dry_ingredients {
+    add flour.
+    add baking_soda.
+    add salt.
+    mix.
+  }.
+  in_bowl dough {
+    add butter.
+    add sugar.
+    add brown_sugar.
+    mix "until smooth".
+    add eggs.
+    add vanilla.
+    mix.
+    add dry_ingredidents "slowly".
+    mix.
+    add choc_chips.
+    fold.
+  }.
+  place dough on sheet "in 2 tbs balls".
+  bake "12 minutes".
+Finished.

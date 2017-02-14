@@ -1,0 +1,33 @@
+Define "Chicken Parmesan".
+Ingredient bread_crumbs : "2 cups bread crumbs".
+Ingredient flour : "1 cups flour".
+Ingredient eggs : "2 eggs".
+Ingredient chicken : "1lb chicken breast".
+Ingredient oil : "olive oil".
+Ingredient sauce : "2 cups marinara sauce".
+Ingredient cheese : "1 cup mozzarella cheese".
+Equiptment pan : "large skillet".
+Equiptment dish : "baking dish".
+Procedure.
+  preheat_oven 350.
+  flatten chicken.
+  in_bowl egg_wash {
+    add eggs.
+    whisk.
+  }.
+  in_bowl flour {
+    add flour.
+  }.
+  in_bowl bread_crumbs {
+    add bread_crumbs.
+  }.
+  coat chicken with flour.
+  coat chicken with egg_wash.
+  coat chicken with bread_crumbs.
+  place oil in pan "about 1 inch deep".
+  fry chicken in pan.
+  place chicken in dish.
+  cover chicken with sauce.
+  cover chicken with cheese.
+  bake "20 minutes" "until cheese melts".
+Finished.

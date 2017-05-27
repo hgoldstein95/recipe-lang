@@ -4,12 +4,13 @@ open Ast
 
 %token RECIPE INGREDIENT EQUIPTMENT PROCEDURE FINISHED MIX FOLD ADD DOT COLEN
 %token <string> VAR
+%token <string> LIT
 
 %start main
 %type <Ast.recipe> main
 %%
 
-main : RECIPE VAR DOT defns proc { { title = $2; defns = $4; steps = $5; } }
+main : RECIPE LIT DOT defns proc { { title = $2; defns = $4; steps = $5; } }
 
 defns : defn       { [$1] }
       | defns defn { $2 :: $1 }

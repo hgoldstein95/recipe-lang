@@ -4,9 +4,11 @@ exception Eof
 }
 
 let id = ['A'-'Z' 'a'-'z']*
+let lit = '"' ['A'-'Z' 'a'-'z' ' ']* '"'
 
 rule token = parse
     [' ' '\t' '\n'] { token lexbuf }
+  | lit as l        { LIT(l) }
   | "Recipe"        { RECIPE }
   | "Ingredient"    { INGREDIENT }
   | "Equiptment"    { EQUIPTMENT }
